@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <link href="./estilos.css" rel="stylesheet">
+    <title>Atividade</title>
+</head>
+<body>
+    <div>
+        <form id="form1" name="form1">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <input id="radio" name="radio" type="radio" value="1" onclick="opcao1()" checked> IMC
+                        <input id="radio" name="radio" type="radio" value="2" onclick="opcao2()"> Retângulo
+                        <input id="radio" name="radio" type="radio" value="3" onclick="opcao3()"> Círculo
+                    </td>
+                </tr>
+                <tr>
+                    <td><label id="label1">Peso:</label></td>
+                    <td><input id="campo1" type="number" min="0"></td>
+                </tr>
+                <tr>
+                    <td><label id="label2">Altura:</label></td>
+                    <td><input id="campo2" type="number" min="0"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" id="botao" value="Calcular" onclick="calcular()" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <span>MultiCalculadora</span>
+    <script type="text/javascript" src="./scripts.js"></script>
+</body>
+</html>
